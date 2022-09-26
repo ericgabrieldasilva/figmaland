@@ -19,13 +19,16 @@ button{
 
 /* ========== ROOT ========== */
 :root{
+  /* font size */
+  font-size: 62.5%;
+
   --primary-color: #2091F9;
 
   --dark-text: #252B42;
   --light-text: #FFFFFF;
   --second-text: #374754;
 
-  --light-background: #FFFFFF;
+  --light-background: gray;
   --dark-background: #252B42;
 
   --box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
@@ -33,61 +36,66 @@ button{
 
 /* ========== BASE ========== */
 .container{
-  max-width: 1280px;
+  max-width: 128rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1.6rem;
   display: flex;
 }
 
 .btn{
-  padding: 1rem 2rem;
+  padding: 1.6rem 3.2rem;
   background: var(--primary-color);
-  border-radius: 35px;
+  border-radius: 3.5rem;
   color: var(--light-text);
   font-weight: 700;
   cursor: pointer;
 }
 
 section{
-  padding: 6rem 0;
+  padding: 9.6rem 0;
 }
 
 h1{
-  font-size: 76px;
-  line-height: 84px;
+  font-size: 7.6rem;
+  line-height: 8.4rem;
   letter-spacing: 0.2px;
 }
 
 h2{
   font-weight: 400;
-  font-size: 48px;
-  line-height: 55px;
+  font-size: 4.8rem;
+  line-height: 5.5rem;
   letter-spacing: 0.2px;
 }
 
 h3{
   font-weight: 700;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 2rem;
+  line-height: 2.8rem;
   letter-spacing: 0.1px;
 }
 
 h4{
   font-weight: 400;
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 2.8rem;
+  line-height: 4rem;
   letter-spacing: 0.2px;
+  max-width: 90rem;
 }
 
 p{
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
   letter-spacing: 0.2px;
+}
+
+img{
+  max-width: 100%;
 }
 
 /* ========== BODY ========== */
 body{
-  background-color: gray;
+  background-color: var(--light-background);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -100,24 +108,24 @@ header{
 header .container{
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 10rem;
 }
 
 header nav{
   display: flex;
-  gap: 2rem;
+  gap: 3.2rem;
 }
 
 header ul{
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3.2rem;
 }
 
 header nav ul li a{
   color: var(--light-text);
-  font-size: 15px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
   letter-spacing: 0.2px;
 }
 
@@ -136,7 +144,7 @@ header nav ul li a{
 }
 
 #home .container{
-  height: 930px;
+  height: 93rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -149,11 +157,57 @@ header nav ul li a{
 
 #home h4{
   color: var(--light-text);
-  max-width: 900px;
-  margin-block: 1rem 4rem;
+  margin-block: 1.6rem 6.4rem;
 }
 
+/* ========== FEATURE ========== */
+#feature .container{
+  flex-direction: column;
+  text-align: center;
+}
 
+.text-feature h2{
+  color: var(--dark-text);
+}
 
+.text-feature h4{
+  color: var(--second-text);
+  margin: 0 auto;
+  margin-top: 1.6rem;
+}
 
+.items-feature{
+  display: flex;
+  gap: 5.2rem;
+  max-width: 90rem;
+  margin: 8rem auto;
+}
+
+.item-feature-single h3{
+  color: var(--dark-text);
+  margin: 2rem 0;
+}
+
+.item-feature-single p{
+  color: var(--second-text);
+}
+
+/* ========== SERVICE ========== */
+#service .container{
+  align-items: center;
+  gap: 5rem;
+}
+
+.text-service{
+  width: 50%;
+}
+
+.text-service h2{
+  color: var(--dark-text);
+}
+
+.text-service h4{
+  color: var(--second-text);
+  margin-block: 0.8rem 6rem;
+}
 
