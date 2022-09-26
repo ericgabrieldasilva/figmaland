@@ -97,6 +97,14 @@ h4{
   color: var(--second-text);
 }
 
+h5{
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.1px;
+  color: var(--second-text);
+}
+
 h6{
   font-weight: 400;
   font-size: 1.6rem;
@@ -280,3 +288,35 @@ header nav ul li a{
   margin-top: 8rem;
 }
 
+/* ========== TESTIMONIALS ========== */
+#testimonials .container{
+  flex-direction: column;
+  text-align: center;
+}
+
+.testimonial{
+  margin-block: 8rem;
+}
+
+.testimonial h4{
+  margin: 5rem auto;
+}
+
+.client-testimonial{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  text-align: left;
+}
+
+.client-testimonial img{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.client-testimonial-text p{
+  color: var(--dark-text);
+  font-size: 1.5rem;
+}
