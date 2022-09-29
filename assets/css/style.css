@@ -760,5 +760,12 @@ footer a{
     margin-bottom: 2rem;
   }
 
+  .adress-footer{
+    align-items: center;
+  }
+
+  .social-media-footer{
+    justify-content: center;
+  }
 
 }
